@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Smiles Daycare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="https://www.google.com/maps/place/1021+Pomeroy+Ave,+Santa+Clara,+CA+95051/@37.3449047,-121.9867219,17z/data=!3m1!4b1!4m5!3m4!1s0x808fca73f4bd45f3:0xe00cf4e5c8628592!8m2!3d37.3449047!4d-121.9867219">1021 Pomeroy Ave. Santa Clara, CA 95051</a>
+            <a href="enroll.html">Schedule Tour</a>
+        </div>
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 id="navbar-logo">CUTE SMILES DAYCARE</h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                  <li><a href="home.html" class="nav-links-active">Home</a></li>
+                  <li><a href="about.html" class="nav-links">About Us</a></li>
+                  <li><a href="curriculum.html" class="nav-links">Curriculum</a></li>
+                  <li><a href="contact.html" class="nav-links">Contact</a></li>
+                  <li><a href="enroll.html" class="nav-links nav-links-btn">Enroll Today</a></li>
+              </ul> 
+            </nav>
+        </div>
+    </header>
+    <div class="img1">
+        <img src="../photos/image1.jpeg" class="backgimg"/>
+        <div class="text">
+          <h1 class="heading"><b>AT CUTE SMILES THERE IS A PLACE FOR YOU</b></h1>
+          <p1 class="undtext">CREATIVE COURSES FOR INFANTS & TODDLERS</p1>
+          <button><a href="about.html" >LEARN MORE</a></button>
+        </div>
+      </div>
+      <div class="sec1">
+        <div class="text">
+          <h1 class="heading"><b>CUTE SMILES DEVELOPMENT CENTER OPEN NOW!</b></h1>
+          <hr size="4" width="4%" color="orange">   
+          <p1 class="undtext">1021 Pomeroy Ave<br>0-5 Years of age<br> enrolling now</p1>
+          <button><a href="enroll.html" >ENROLL TODAY</a></button>
+        </div>
+      </div>
+      <div class="sec2">
+        <div class="text">
+          <h1 class="heading"><b>WHY CHOOSE CUTE SMILES</b></h1>
+          <hr size="4" width="4%" color="orange">  
+          <div class="images">
+            <div class="content">
+              <img src="../photos/apple.png" class="backgimg"/>
+              <p1>INFANT CARE</p1>
+            </div>
+            <div class="content">
+              <img src="../photos/preSchool.png" class="backgimg"/>
+              <p1>PRESCHOOL PREPARATION</p1>
+            </div>
+            <div class="content">
+              <img src="../photos/flower.png" class="backgimg"/>
+              <p1>LANGUAGE DEVELOPMENT</p1>
+            </div>
+            <div class="content">
+              <img src="../photos/Stem.png" class="backgimg"/>
+              <p1>STEM</p1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec3">
+        <img src="../photos/daycareimg.jpeg" class="backgimg"/>
+        <div class="text">
+          <h1 class="heading"><b>WHO ARE WE</b></h1>
+          <hr size="4" width="4%" color="orange">   
+          <p1 class="undtext">Meaningful Beginnings provides premium childcare
+             services for infants and toddlers up to three years old. Our first
+              center was founded in 2013 in the Richmond District, San Francisco.</p1>
+              <button><a href="about.html" class="LearnBtn">LEARN MORE</a></button>
+        </div>
+      </div>
+    <footer>
+        <div class="contact-sub-sec">
+            <h3>CONTACT US</h3>
+            <a href="#">blahbalh@gmail.com</a>
+            <h3 style="color: orangered">LOCATIONS</h3>
+            <p> 1021 Pomeroy Ave.<br> Santa CLara, CA 95051</p>
+      
+          </div>
+          <div class="useful-links">
+            <h3>USEFUL LINKS</h3>
+              <a href="home.html">Home</a>
+              <a href="about.html">About Us</a> 
+              <a href="curriculum.html">Curriculum</a>
+              <a href="contact.html">Contact</a>
+              <a href="enroll.html">Enrollment</a>
+          </div>
+          <div class="yelp">
+            <h3>YELP REVIEWS</h3>
+            <p>Cute Smiles Daycare Center</p>
+            <a href="https://www.yelp.com/biz/cute-smiles-daycare-santa-clara"><img  class="yelp-img" src="../photos/yelp.png"/> </a>
+          </div>
+    </footer>
+    
+</body>
+<script>
+    const menu= document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click',function(){
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    })
+</script>
+</html>

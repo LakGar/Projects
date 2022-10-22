@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="https://www.google.com/maps/place/1021+Pomeroy+Ave,+Santa+Clara,+CA+95051/@37.3449047,-121.9867219,17z/data=!3m1!4b1!4m5!3m4!1s0x808fca73f4bd45f3:0xe00cf4e5c8628592!8m2!3d37.3449047!4d-121.9867219">1021 Pomeroy Ave. Santa Clara, CA 95051</a>
+            <a href="enroll.html">Schedule Tour</a>
+        </div>
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 id="navbar-logo">CUTE SMILES DAYCARE</h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="home.html" class="nav-links">Home</a></li>
+                    <li><a href="about.html" class="nav-links-active">About Us</a></li>
+                    <li><a href="curriculum.html" class="nav-links">Curriculum</a></li>
+                    <li><a href="contact.html" class="nav-links">Contact</a></li>
+                    <li><a href="enroll.html" class="nav-links nav-links-btn">Enroll Today</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <div class="top-image">
+      <img class="background-image" src="../photos/image1.jpeg"/>
+      <div class="text">
+          <h1> ABOUT CUTE SMILES</h1>
+      </div>
+  </div>
+
+  <div class="main-page">
+      <div class="section-ourStory">
+          <div class="text">
+            <h3>OUR STORY</h3>
+            <hr size="4" width="4%" color="orange">   
+            <p>Meaningful Beginnings began in the downstairs of Ashley’s home.
+                A few years later, she outgrew her space and moved her mom-and-pop
+                daycare to a commercial space in the Sunset district of San Fransisco.
+                Today, Meaningful Beginnings continues to grow throughout San Fransisco
+                and the Bay Area with the goal of expanding nationwide.</p>
+            </div>
+          <img src="../photos/Our-Story.jpeg" class="our-story-img"/>
+
+      </div>
+      <div class="section-ourStorytwo">
+          <p>In this world, it’s valuable to broaden children’s horizons at a young age.
+              The first 0-5 years of age is the most important part of a child’s life.
+              That’s when they download their moral and belief systems which they will 
+              carry through adulthood.<br><br>
+
+              It’s crucial to have loving caregivers who will create emotional stability as a
+              child grows and learns.Our high retention rate in caregivers has earned us
+              recognition as one of the top and best childcare centers in San Francisco.
+              <br><br>
+              Every child is unique and requires different caregiving techniques.
+              Here at Meaningful Beginnings, our goal is to provide a safe, warm,
+              fun, and secure learning environment where your children can thrive.</p>
+      </div>
+      <div class="section-ourGoal">
+          <h3 class="heading-ourGoal"> OUR GOALS</h1>
+          <hr size="4" width="4%" color="orange">
+          <div class="ourGoal-subsec">
+              <div class="v"></div>
+              <div class="ourGoal-sec">
+                  <img src="../photos/h3-custom-icon-1.png"/>
+                  <h3>SOCIAL & EMOTIONAL SUPPORT</h3>
+                  <p>We provide caring teachers whom are responsive to the individual child
+                      while encouraging self-care and independence. Teachers also facilitates
+                      the development of self-control through structure and redirection.</p>
+
+              </div>
+              <div class="ourGoal-sec">
+                  <img src="../photos/h3-custom-icon-2.png"/>
+                  <h3>INTELLECTUAL SUPORT</h3>
+                  <p>We provide opportunities that reflect the child’s interest. These opportunities
+                      provide time for interactive exploration while also providing a unique and
+                      exciting learning experience. Furthermore, activities prepare children for
+                      future life experiences.</p>
+
+              </div>
+              <div class="ourGoal-sec">
+                  <img src="../photos/h3-custom-icon-3.png"/>
+                  <h3>PHYSICAL DEVELOPMENT</h3>
+                  <p>We provide caring teachers whom are responsive to the individual child
+                      while encouraging self-care and independence. Teachers also facilitates
+                      the development of self-control through structure and redirection.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <footer>
+        <div class="contact-sub-sec">
+            <h3>CONTACT US</h3>
+            <a href="#">blahbalh@gmail.com</a>
+            <h3 style="color: orangered">LOCATIONS</h3>
+            <p> 1021 Pomeroy Ave.<br> Santa CLara, CA 95051</p>
+      
+          </div>
+          <div class="useful-links">
+            <h3>USEFUL LINKS</h3>
+              <a href="home.html">Home</a>
+              <a href="about.html">About Us</a> 
+              <a href="curriculum.html">Curriculum</a>
+              <a href="contact.html">Contact</a>
+              <a href="enroll.html">Enrollment</a>
+          </div>
+          <div class="yelp">
+            <h3>YELP REVIEWS</h3>
+            <p>Cute Smiles Daycare Center</p>
+            <a href="https://www.yelp.com/biz/cute-smiles-daycare-santa-clara"><img  class="yelp-img" src="../photos/yelp.png"/> </a>          </div>
+    </footer>
+    
+</body>
+<script>
+    const menu= document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click',function(){
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    })
+</script>
+</html>

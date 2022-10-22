@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/enroll.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="https://www.google.com/maps/place/1021+Pomeroy+Ave,+Santa+Clara,+CA+95051/@37.3449047,-121.9867219,17z/data=!3m1!4b1!4m5!3m4!1s0x808fca73f4bd45f3:0xe00cf4e5c8628592!8m2!3d37.3449047!4d-121.9867219">1021 Pomeroy Ave. Santa Clara, CA 95051</a>
+            <a href = "#my_form">Schedule Tour</a>
+        </div>
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 id="navbar-logo">CUTE SMILES DAYCARE</h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="home.html" class="nav-links">Home</a></li>
+                    <li><a href="about.html" class="nav-links">About Us</a></li>
+                    <li><a href="curriculum.html" class="nav-links">Curriculum</a></li>
+                    <li><a href="contact.html" class="nav-links">Contact</a></li>
+                    <li><a href="enroll.html" class="nav-links nav-links-btn">Enroll Today</a></li>
+                </ul> 
+            </nav>
+        </div>
+    </header>
+    <div class="top-image">
+        <img class="background-image" src="../photos/image1.jpeg"/>
+        <div class="text">
+            <h1> Enrollment</h1>
+        </div>
+    </div>
+
+    <div id= "my_form"class="enrollForm">
+        <h3 class="formHeading">PLEASE FILL OUT THE FORM BELOW TO BE ADDED TO OUR WAITING LIST</h3>
+        <div class="formContainer">
+        <h3>CHILD'S INFORMATION</h3>
+
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+           
+            <div class="firstName">
+                <label for="firstName" class="fcf-label">Child's First Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="firstName" name="firstName" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="lastName">
+                    <label for="lastName" class="fcf-label">Child's Last Name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="lastName" name="lastName" class="fcf-form-control" required>
+                    </div>
+            </div>
+
+            <div class="prefName">
+                <label for="prefName" class="fcf-label">Preffered Name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="prefName" name="prefName" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="DOB">
+            <label for="DOB" class="fcf-label">Date of Birth</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="DOB" name="DOB" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="childAddress">
+            <label for="address" class="fcf-label">Home Address</label>
+            <div class="fcf-input-group">
+                <textarea id="Address" name="Address" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+            </div>
+
+            <h3>AVAILABILITY</h3>
+
+            <div class="startdate">
+                <label for="startDate" class="fcf-label">Requested Approximate Start Date</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="startDate" name="startDate" class="fcf-form-control" required>
+                </div>
+            </div>
+            
+            <h3>PARENT/GUARDIAN INFORMATION</h3>
+            
+            <div class="guardianName">
+                <label for="guardianName" class="fcf-label">Mother's / Father's / Caregiver's Name*</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="guardianName" name="guardianName" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="gAddress">
+                <div class="fcf-form-group">
+                    <label for="gAddress" class="fcf-label">Home Address</label>
+                    <div class="fcf-input-group">
+                        <textarea id="gAddress" name="gAddress" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile">
+                <label for="mobile" class="fcf-label">Mobile Number</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="mobile" name="mobile" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="mobile">
+                <label for="homemobile" class="fcf-label">Home Phone Number</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="homemobile" name="homemobile" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="mobile">
+                <label for="workmobile" class="fcf-label">Work Phone Number</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="workmobile" name="workmobile" class="fcf-form-control" required>
+                </div>
+            </div>
+
+            <div class="email">
+                    <label for="Email" class="fcf-label">Email Address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+            </div>
+
+            <div class="message">
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Any other details which may assist us to accommodate your requirements?</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+            </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="contact-sub-sec">
+            <h3>CONTACT US</h3>
+            <a href="#">blahbalh@gmail.com</a>
+            <h3 style="color: orangered">LOCATIONS</h3>
+            <p> 1021 Pomeroy Ave.<br> Santa CLara, CA 95051</p>
+      
+          </div>
+          <div class="useful-links">
+            <h3>USEFUL LINKS</h3>
+              <a href="home.html">Home</a>
+              <a href="about.html">About Us</a> 
+              <a href="curriculum.html">Curriculum</a>
+              <a href="contact.html">Contact</a>
+              <a href="enroll.html">Enrollment</a>
+          </div>
+          <div class="yelp">
+            <h3>YELP REVIEWS</h3>
+            <p>Cute Smiles Daycare Center</p>
+            <a href="https://www.yelp.com/biz/cute-smiles-daycare-santa-clara"><img  class="yelp-img" src="../photos/yelp.png"/> </a>
+          </div>
+    </footer>
+    
+</body>
+<script>
+    const menu= document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click',function(){
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    })
+</script>
+</html>
